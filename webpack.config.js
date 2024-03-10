@@ -34,7 +34,7 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader,'style-loader', 'css-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
     ],
   },
@@ -47,10 +47,10 @@ module.exports = {
     new MiniCssExtractPlugin(),
 
     new CopyPlugin({
-      patterns: [
-        { from: './src/css/styles.css', to: 'styles.css' },
-      ],
-    }),
+        patterns: [
+          { from: './src/css/styles.css', to: 'styles.css' },
+        ],
+      }), 
   ],
   devServer: {
     port: 9000,
